@@ -1,0 +1,94 @@
+2. Do the below program in arrow functions
+
+a. Print odd numbers in an array 
+     
+arrow Function:
+                oddNumbers = (array) => {
+                   for(var i = 0 ; i< array.length ; i++){
+                        if(array[i]%2!=0){
+                           console.log(array[i])
+                        } 
+                   }
+                        }
+
+
+b. Convert all the string to title caps in a string array.
+
+
+arrow Function :
+                     titleCase = (str) => {
+                    str = str.toLowerCase().split(' ');
+                    for (var i = 0; i < str.length; i++) {
+                      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+                    } 
+                    return str.join(' ');
+                  }            
+
+
+c. Sum of all numbers in an array.
+
+
+arrow:       sum = (array)=>{
+             var sum = 0;
+                  for(var i = 0 ; i< array.length ; i++){
+                     sum = sum + array[i];
+                   }
+                   return sum;
+                   }
+
+d. Return the all prime number in array.
+
+      
+ arrow Function :
+    
+       primeNumber = (numArray) => {
+                      numArray = numArray.filter((number) => {
+                        for (var i = 2; i <= Math.sqrt(number); i++) {
+                          if (number % i === 0) return false;
+                        }
+                        return true;
+                      });
+                      console.log(numArray);
+                  }
+
+e. Return all the palindrome in an array.
+
+   arrow : 
+            Palindrome = (arr, n) =>
+    {
+        
+        for (let i = 0; i < n; i++)
+        {
+            let ans = isPalindrome(arr[i]);
+            if (ans == false)
+                return false;
+        }
+        return true;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
